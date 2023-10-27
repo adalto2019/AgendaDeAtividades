@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js" defer></script>
+    <title>Registro de Atividades</title>
+</head>
+
+<body>    
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB2LEmptL0A_85XLtv9HNZb_TJkOC6a6oEiQ&usqp=CAU" alt="imagem">
+    </header>
+    <button type="button" class="btnCadastro" id="cadastrarCliente" title="Clique para adicionar uma nova atividade">Adicionar Nova Atividade</button>
+    <h1>Minhas Atividades</h1>
+    <main>
+        <table id="tableClient" class="records">
+            <thead>
+                <tr>
+                    <th>Atividade</th>
+                    <th id="thMeio">Descrição da Atividade</th>
+                    <th>Observações</th>
+                </tr>
+            </thead>
+            <tbody><!--Tag onde será exibido os dados cadastrados-->
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Cadastrar Nova Atividade</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Título da Atividade.." required>
+                    <input type="text" id="atv" class="modal-field" placeholder="Descrição da Atividade.." required>
+                    <input type="text" id="obs" class="modal-field" placeholder="Inclua uma obs: ex. dia da semana.." required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="btnSalvar">Salvar</button>
+                    <button id="cancelar" class="btnFechar">Fechar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy Aj - 2023
+    </footer>
+</body>
+
+</html>

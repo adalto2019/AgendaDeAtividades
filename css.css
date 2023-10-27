@@ -1,0 +1,147 @@
+.modal{/*Abrir modal*/
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #c0353590;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-content{/*Modal em exibição*/
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    width: 50%;
+    margin: 13vh auto;
+    padding-bottom: 20px;
+    background-color: rgb(31, 30, 30);
+    box-shadow: 1px 1px 10px wheat;
+    border-radius: 15px;
+}
+
+.modal-header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 50px;
+    line-height: 20px;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.modal-form{/*Tag Form*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 10px;
+    width: 190%;
+}
+
+.modal-field{
+    width: calc(50% - 10px);
+    height: 40px;
+    outline-style: none;
+    border-style: none;
+    box-shadow: 0 0 2px black;
+    padding: 0 10px;
+    font-size:1rem;
+}
+
+.modal-field:focus{
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 3px var(--primary-color);
+}
+
+
+.modal-footer{
+    background-color: inherit;
+    text-align: right;
+    padding: 0 20px;
+}
+
+@media (max-width:480px){
+    .modal{
+        top:100%;
+        transition: all 1s ease;
+    }
+    .modal.active{
+        top:0;
+    }
+    .modal-content{
+        margin:0;
+        width:100%;
+        position:fixed;
+    }
+    .modal-field{width:100%;}
+}
+
+*********************************************MAIN
+*{padding: 0; margin: 0;}
+
+body{background-color: black; color: wheat; text-align: center;}
+
+main{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    box-shadow: 0px 5px 15px 5px wheat;
+    gap: 8%;
+    border-radius: 15px;}
+
+footer{text-align: center; padding: 50px; color: wheat;}
+
+#thMeio{width: 250px;}
+
+img{border-radius: 50%; width: 100px; margin-bottom: 10px;}
+
+**********************************BUTTON
+
+.button{border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+}
+
+.btnCadastro{border-radius: 20px;
+    font-size: 15px;
+    padding: 7px;}
+    .btnCadastro:hover{background-color:  rgb(204, 155, 63);}
+    .btnEditar, .btnExcluir{width: 55px;}
+    .btnEditar:hover, .btnExcluir:hover, .btnSalvar:hover, .btnFechar:hover{background-color: rgb(204, 155, 63);}
+
+**********************************TABELA
+.records{
+    width: 100%;
+    user-select: none;
+    text-align: center;
+    color: black;
+}
+
+.records th{/*cabeçalho da tabela*/ 
+    height: 20px;
+    background-color: rgb(204, 155, 63);
+    color: black;
+    width: 160px; 
+}
+.records td{height: 50px}/*Linha dos dados adicionados*/

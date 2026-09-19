@@ -2,7 +2,7 @@
 
 Aqui desenvolvo um CRUD (Create, Read, Update, Delete) com as tecnológias: Html, Css e JavaScript, de um agendador de tarefas simplificado.
 
-O resultado pode ser conferido no endereço gitHub pages: https://adalto2019.github.io/AgendaDeAtividades
+O resultado pode ser conferido no endereço gitHub pages: https://adalto2019.github.io/agenda-de-atividades
 
 ### Passos de implementação GitHub Pages:<br/> 
 ✔️ Configurações;<br/> 
@@ -11,5 +11,5 @@ O resultado pode ser conferido no endereço gitHub pages: https://adalto2019.git
 ✔️ Em 'Branch': Selecione main e em Select folder: Selecione /(root);<br/> 
 ✔️ Clique em Save, após alguns minutos o site já estará disponível para visitas.
 
-### Autor
-Adalto Carvalho Ribeiro Simão Junior - Outubro 2003
+### 👤 Autor
+Adalto Carvalho Ribeiro Simão Junior - Outubro 2003.

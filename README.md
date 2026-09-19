@@ -1,6 +1,6 @@
-# AgendaDeTarefas
+# Agenda de Atividades
 
-Aqui desenvolvo um CRUD (Creat, Read, Update, Delete) com as tecnológias: Html, Css e JavaScript, de um agendador de tarefas simplificado.
+Aqui desenvolvo um CRUD (Create, Read, Update, Delete) com as tecnológias: Html, Css e JavaScript, de um agendador de tarefas simplificado.
 
 O resultado pode ser conferido no endereço gitHub pages: https://adalto2019.github.io/AgendaDeAtividades
 
